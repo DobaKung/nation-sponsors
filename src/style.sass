@@ -1,0 +1,58 @@
+$base-color: #27589d
+
+*
+    box-sizing: border-box
+
+html, body
+    margin: 0
+    padding: 0
+    font-family: sans-serif
+    color: #202020
+
+.container
+    max-width: 1200px
+    margin-right: auto
+    margin-left: auto
+
+header
+    background-color: $base-color
+    color: #FFF
+    text-align: center
+    padding: 1em 4em
+    h1
+        font-size: 5em
+        font-family: 'Chonburi', cursive
+        @media screen and ( max-width: 480px )
+            font-size: 3em
+
+main
+    padding: 2em 1em
+    @media screen and ( max-width: 480px )
+        padding: 1em 0
+
+.cards
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+
+.card
+    background-color: #FFF
+    box-shadow: 0 3px 14px rgba(0,0,0,0.2)
+    border-radius: 5px
+    width: 100%
+    max-width: 250px
+    margin: 0 1em 2em
+    padding: 1em
+    @media screen and ( max-width: 595px )
+        max-width: 100%
+        margin: 0 1em 1em
+    .product
+        font-size: 2em
+        margin-bottom: 0.5em
+        @media screen and ( max-width: 480px )
+            font-size: 1.4em
+    .by
+        color: #575757
+
+footer
+    text-align: center

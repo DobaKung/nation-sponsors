@@ -1,0 +1,26 @@
+{
+  "name": "nation-sponsors",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/index.pug",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "parcel build src/index.pug"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DobaKung/nation-sponsors.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DobaKung/nation-sponsors/issues"
+  },
+  "homepage": "https://github.com/DobaKung/nation-sponsors#readme",
+  "devDependencies": {
+    "cssnano": "^4.1.10",
+    "pug": "^3.0.0",
+    "sass": "^1.26.10"
+  }
+}

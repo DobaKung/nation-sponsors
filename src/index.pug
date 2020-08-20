@@ -1,0 +1,17 @@
+html
+  head
+    title สปอนเซอร์ช่องฟ้า
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Chonburi&display=swap")
+    link(rel="stylesheet", href="./style.sass")
+  body
+    header
+      h1 ใครลงโฆษณา<br/>ช่องฟ้า
+    main
+      .container
+        .cards
+          each p in sponsors
+            .card
+              .product= p.productName
+              .by= p.companyName ? 'ของ ' + p.companyName : ''
+    footer
+      p ข้อมูล ณ วันที่ #{dataDate}

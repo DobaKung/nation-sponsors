@@ -1,0 +1,23 @@
+.cards
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+
+.card
+    background-color: $white-color
+    box-shadow: 0 3px 14px rgba(0,0,0,0.2)
+    border-radius: $radius
+    width: 100%
+    max-width: 250px
+    margin: 0 1em 2em
+    padding: 1em
+    @media screen and ( max-width: 595px )
+        max-width: 100%
+        margin: 0 1em 1em
+    .product
+        font-size: 2em
+        margin-bottom: 0.5em
+        @media screen and ( max-width: 480px )
+            font-size: 1.4em
+    .by
+        color: #575757

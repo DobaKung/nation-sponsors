@@ -1,4 +1,11 @@
 $base-color: #27589d
+$secondary-color: #f1e74d
+$white-color: #FFF
+$radius: 5px
+$container-width: 1200px
+
+@import button
+@import card
 
 *
     box-sizing: border-box
@@ -10,20 +17,9 @@ html, body
     color: #202020
 
 .container
-    max-width: 1200px
+    max-width: $container-width
     margin-right: auto
     margin-left: auto
-
-a.button
-    display: inline-block
-    color: inherit
-    text-decoration: none
-    border: 1px solid $base-color
-    padding: 0.5em 1em
-    border-radius: 5px
-    &:hover
-        background-color: $base-color
-        color: #FFF
 
 header
     background-color: $base-color
@@ -31,8 +27,10 @@ header
     text-align: center
     padding: 1em 4em 3em
     border-radius: 0 0 10px 10px
-    max-width: 1200px
+    max-width: $container-width
     margin: auto
+    @media screen and ( max-width: 480px )
+        padding-bottom: 1.5em
     h1
         font-size: 5em
         font-family: 'Chonburi', cursive
@@ -40,7 +38,7 @@ header
         margin: 0.5em 0
         span
             display: block
-            color: #71ffeb
+            color: $secondary-color
         @media screen and ( max-width: 480px )
             font-size: 3em
     .button
@@ -54,30 +52,6 @@ main
     padding: 2em 1em
     @media screen and ( max-width: 480px )
         padding: 1em 0
-
-.cards
-    display: flex
-    justify-content: center
-    flex-wrap: wrap
-
-.card
-    background-color: #FFF
-    box-shadow: 0 3px 14px rgba(0,0,0,0.2)
-    border-radius: 5px
-    width: 100%
-    max-width: 250px
-    margin: 0 1em 2em
-    padding: 1em
-    @media screen and ( max-width: 595px )
-        max-width: 100%
-        margin: 0 1em 1em
-    .product
-        font-size: 2em
-        margin-bottom: 0.5em
-        @media screen and ( max-width: 480px )
-            font-size: 1.4em
-    .by
-        color: #575757
 
 footer
     text-align: center

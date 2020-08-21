@@ -7,7 +7,7 @@ html
     link(rel="stylesheet", href="./style.sass")
   body
     header
-      h1 ใครลงโฆษณา<br/>ช่องฟ้า
+      h1 ใครลงโฆษณา<span>ช่องฟ้า</span>
     main
       .container
         .cards
@@ -17,3 +17,10 @@ html
               .by= p.companyName ? 'ของ ' + p.companyName : ''
     footer
       p ข้อมูล ณ วันที่ #{dataDate}
+
+    script(async, src="https://www.googletagmanager.com/gtag/js?id=UA-49199645-8")
+    script
+      |window.dataLayer = window.dataLayer || [];
+      |function gtag(){dataLayer.push(arguments);}
+      |gtag('js', new Date());
+      |gtag('config', 'UA-49199645-8');

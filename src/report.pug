@@ -1,0 +1,26 @@
+html
+  head
+    title ใครสปอนเซอร์ช่องฟ้า
+    include _meta.pug
+    link(rel="shortcut icon", href="./assets/favicon.png", type="image/x-icon")
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Chonburi&display=swap")
+    link(rel="stylesheet", href="./styles/main.sass")
+  body
+    header
+      h1 รายงานสปอนเซอร์
+    main
+      .container
+        form.form.report-box(action="https://formspree.io/mqkyolra", method="POST")
+          .form-group
+            label(for="product-name") ชื่อสินค้า
+            input(type="text", id="product-name", name="product-name", required)
+          .form-group
+            label(for="company-name") ชื่อบริษัท
+            input(type="text", id="company-name", name="company-name")
+          .form-group
+            label(for="proof") หลักฐาน (เช่น วิดีโอ YouTube)
+            input(type="text", id="proof", name="proof")
+          .form-group
+            button.button(type="submit") ส่ง
+
+    include _analytics.pug

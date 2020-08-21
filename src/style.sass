@@ -14,20 +14,41 @@ html, body
     margin-right: auto
     margin-left: auto
 
+a.button
+    display: inline-block
+    color: inherit
+    text-decoration: none
+    border: 1px solid $base-color
+    padding: 0.5em 1em
+    border-radius: 5px
+    &:hover
+        background-color: $base-color
+        color: #FFF
+
 header
     background-color: $base-color
     color: #FFF
     text-align: center
-    padding: 1em 4em
+    padding: 1em 4em 3em
+    border-radius: 0 0 10px 10px
+    max-width: 1200px
+    margin: auto
     h1
         font-size: 5em
         font-family: 'Chonburi', cursive
         font-weight: 400
+        margin: 0.5em 0
         span
             display: block
             color: #71ffeb
         @media screen and ( max-width: 480px )
             font-size: 3em
+    .button
+        border-color: #FFF
+        margin: 0.5em
+        &:hover
+            background-color: #FFF
+            color: $base-color
 
 main
     padding: 2em 1em

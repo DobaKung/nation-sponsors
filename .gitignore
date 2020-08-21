@@ -1,0 +1,11 @@
+# macOS
+.DS_Store
+
+# Parcel cache
+.cache
+
+# Built files
+dist
+
+# NPM
+node_modules

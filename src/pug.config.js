@@ -3,6 +3,6 @@ const sponsors = require('./sponsors.json');
 module.exports = {
     locals: {
         sponsors: sponsors,
-        dataDate: '20-08-2020'
+        dataDate: '21-08-2020'
     }
 };
